@@ -59,7 +59,7 @@ JuniorEngineer.prototype.work = function () {
 JuniorEngineer.prototype.isBornGenius = function () {
   return this._isBornGenius || false;
 };
-//- 여기에 코드를 작성하세요
+//- 여기에 코드를 작성하세요 여기
 
 
 
