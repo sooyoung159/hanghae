@@ -11,6 +11,7 @@ packages/chapter1/src/a.js의 코드를 수정하여 Jest 테스트를 실행 �
 ### 과제 B. 
 고비용 작업으로 인해 발생하는 프레임 드랍 최적화하기
 
+![reportb](https://github.com/sooyoung159/xwitter/assets/68948735/6150b0da-200f-4958-b11e-b4b0a3781737)
 
 
 

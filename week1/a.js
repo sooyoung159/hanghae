@@ -23,9 +23,9 @@ function Worker(health) {
 }
 
 function JuniorEngineer(health, intelligence) {
-  // this._super(health);
+  this._super(health);
 
-  Worker.call(this, health);
+  // Worker.call(this, health);
   this._intelligence = intelligence ?? 1;
   if (this._intelligence > 10) {
     this._isBornGenius = true;
@@ -35,6 +35,10 @@ function JuniorEngineer(health, intelligence) {
 
 // 여기에 코드를 작성하세요
 // TO-DO
+
+JuniorEngineer.prototype._super = function (health) {
+  Worker.call(this, health);
+}
 
 Worker.prototype.getHealth = function () {
   return this._health;
@@ -46,6 +50,11 @@ Worker.prototype.work = function () {
 
 JuniorEngineer.prototype = Object.create(Worker.prototype);
 JuniorEngineer.prototype.constructor = JuniorEngineer;
+
+JuniorEngineer.prototype._super = function (health) {
+  Worker.call(this, health);
+}
+
 
 JuniorEngineer.prototype.getIntelligence = function () {
   return this._intelligence;
